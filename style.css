@@ -1,9 +1,6 @@
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
-}
-
-.header {
   display: flex;
   justify-content: space-between;
 }
@@ -21,4 +18,10 @@ main {
   flex-basis: 675px;
   flex-direction: column;
   border: 2px solid black;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+  display: flex;
+
 }
