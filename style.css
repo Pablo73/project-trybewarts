@@ -17,14 +17,12 @@ main {
   display: flex;
   flex-basis: 675px;
   flex-direction: column;
-  
-  border: 2px solid black;
 }
 
 #trybewarts-forms-logo {
   height: 500px;
 }
 
-.nameLastname{
+.nameLastname {
   display: flex;
 }
