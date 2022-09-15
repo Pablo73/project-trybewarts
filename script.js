@@ -3,6 +3,8 @@ const positionSenha = document.getElementsByClassName('senha')[0];
 const positionButton = document.getElementsByClassName('button')[0];
 const textAreaEl = document.getElementById('textarea');
 const counterEl = document.getElementById('counter');
+const agreementCheckboxEl = document.getElementById('agreement');
+const submitBtnEl = document.getElementById('submit-btn');
 
 function logPassword() {
   if (positionEmail.value === 'tryber@teste.com' && positionSenha.value === '123456') {
@@ -17,4 +19,11 @@ function updateCounter() {
   counterEl.textContent = Math.abs(textAreaEl.value.length - 500);
 }
 
+function enableSubmitBtn(event) {
+  const isChecked = event.target.checked;
+  submitBtnEl.classList.toggle('disabled', !isChecked);
+  if (isChecked) submitBtnEl.disabled = false;
+}
+
 textAreaEl.addEventListener('input', updateCounter);
+agreementCheckboxEl.addEventListener('click', enableSubmitBtn);
