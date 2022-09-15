@@ -1,11 +1,51 @@
+/* Da linha 5 a 11, utilizando "Universal Box Sizing with Inheritance" para manter
+o tamanho dos itens de acordo com os valores pré-estabelecidos
+fonte: https://css-tricks.com/box-sizing/ */
+
+html {
+  box-sizing: border-box;
+}
+
+* , *:before , *:after {
+  box-sizing: inherit;
+}
+
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
   justify-content: space-between;
+  align-items: center;
+  height: 10%;
+  color: white;
+  max-height: 70px;
+}
+
+.trybewarts-header-logo {
+  width: 50px;
+  margin-left: 10px;
 }
 
 .trybewarts-login {
   display: flex;
+  margin-right: 5px;
+}
+
+.trybewarts-login > input , .trybewarts-login > button {
+  flex: 0 1 50px;
+  border-radius: 10px;
+  height: 40px;
+  border: none;
+  margin: 5px;
+}
+
+.trybewarts-login > input {
+  padding-left: 10px;
+}
+
+.trybewarts-login > .button {
+  background-color: rgba(128, 0, 128, 0.493);
+  color: white;
+  padding: 0 50px;
 }
 
 main {
