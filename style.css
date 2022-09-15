@@ -74,8 +74,12 @@ main {
   border: 2px solid black;
 }
 
-.famly-study {
+.family-study {
   display: flex;
+}
+
+hr {
+  width: 100%;
 }
 
 .family {
