@@ -50,10 +50,23 @@ body {
   background-color: rgb(70, 6, 115);
   color: white;
   padding: 0 50px;
+  cursor: pointer;
 }
 
 #submit-btn {
   flex: 0 0 40px;
+  pointer-events: none;
+  background-color: rgba(70, 6, 115, 0.3);
+}
+
+#agreement:checked + #submit-btn {
+  background-color: rgb(70, 6, 115);
+  pointer-events: auto;
+}
+
+.agreement {
+  display: grid;
+  grid-template: auto auto / auto auto;
 }
 
 main {
