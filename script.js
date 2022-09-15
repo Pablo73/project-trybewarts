@@ -16,7 +16,8 @@ function logPassword() {
 positionButton.addEventListener('click', logPassword);
 
 function updateCounter() {
-  counterEl.textContent = Math.abs(textAreaEl.value.length - 500);
+  const charactersLeft = Math.abs(textAreaEl.value.length - 500);
+  counterEl.textContent = charactersLeft;
 }
 
 function enableSubmitBtn(event) {
