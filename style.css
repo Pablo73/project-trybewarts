@@ -10,6 +10,10 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  margin: 0;
+}
+
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
@@ -51,11 +55,12 @@ html {
 main {
   display: flex;
   justify-content: space-between;
+  font-size: 1.2rem;
 }
 
 #evaluation-form {
   display: flex;
-  flex-basis: 675px;
+  width: 675px;
   flex-direction: column;
   border: 2px solid black;
 }
@@ -69,20 +74,34 @@ main {
   border: 2px solid black;
 }
 
+.famly-study {
+  display: flex;
+}
+
 .family {
   display: flex;
-  flex-direction: column;
-  flex-basis: 150px;
+  flex-wrap: wrap;
+  width: 35%;
   border: 2px solid black;
+}
+
+#label-family {
+  width: 100%;
+}
+
+.grid-family {
+  display: grid;
+  grid-template: auto auto / auto auto;
 }
 
 .study {
   display: flex;
-  flex-basis: 200px;
+  width: 65%;
   border: 2px solid black;
+  flex-wrap: wrap;
 }
 
-.famly-study {
-  display: flex;
-
+.techs {
+  display: grid;
+  grid-template: auto auto / auto auto auto auto auto auto;
 }
