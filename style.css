@@ -34,7 +34,7 @@ body {
   margin-right: 5px;
 }
 
-.trybewarts-login > input , .trybewarts-login > button {
+.trybewarts-login > input , .trybewarts-login > button , #submit-btn {
   flex: 0 1 50px;
   border-radius: 10px;
   height: 40px;
@@ -46,10 +46,14 @@ body {
   padding-left: 10px;
 }
 
-.trybewarts-login > .button {
-  background-color: rgba(128, 0, 128, 0.493);
+.trybewarts-login > .button , #submit-btn {
+  background-color: rgb(70, 6, 115);
   color: white;
   padding: 0 50px;
+}
+
+#submit-btn {
+  flex: 0 0 40px;
 }
 
 main {
